@@ -1,0 +1,71 @@
+body, html {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+#map {
+    width: 100%;
+    height: 100%;
+}
+
+.parallax {
+    padding: 8px;
+    width: 100%;
+    height: 100%;
+    opacity: 0.75;
+
+    background-attachment:fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.foreground {
+    color: #777;
+    background-color:white;
+    text-align:center;
+    padding:50px;
+    text-align: justify;
+}
+
+.caption span.border {
+    background-color: rgb(46, 43, 43);
+    color: #fff;
+    padding: 18px;
+    font-size:25px;
+    letter-spacing:7px;
+}
+
+.caption {
+    position: relative;
+    left: 0;
+    top: 50%;
+    width: 100%;
+    text-align: center;
+    color: #000;
+}
+
+.border {
+    background-color:transparent;
+    font-size:25px;
+    color:#f7f7f7;
+}
+
+.mountain {
+    background-image: url("./images/mountain.PNG");
+}
+
+.forest {
+    background-image: url("./images/forest.jpg")
+}
+
+.cat {
+    background-image: url("./images/cat.jpg")
+}
+
+@media only screen and (max-device-width: 1366px) {
+    .parallax {
+        background-attachment: scroll;
+    }
+}
